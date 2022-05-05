@@ -1,0 +1,1838 @@
+name = input()
+
+
+
+
+if name == 'mary' :
+    print('hello mary')
+password = input()
+if password == 'swordfish' :
+    print('access granted')
+else:
+    print('wrong password')
+
+w
+hile True:
+    print('who r u')
+    name = input()
+    if name != 'joe':
+        continue
+    print('hello, joe. whats the password? (its a fish.)')
+    password = input()
+    if password == 'swordfish':
+        break
+print('acces granted.')
+
+spam = input()
+if():
+    print ('hello')
+print ('howdy')
+print ('greetings')
+
+spam = 1
+if spam == 1:
+    print('hello')
+if spam == 2:
+    print('howdy')
+if spam == 3:
+    print('greetings')
+	
+	
+i = 1
+while i < 11:
+  print(i)
+  i += 1
+
+for i in range(1, 11):
+    print(i)
+
+
+
+
+spam = input()
+if spam == 1:
+        print('hello')
+elif spam == 2:
+        print('howdy')
+else:
+        print('greetings')
+    
+spam = input()
+while spam == 1:
+    print('hello')
+    break
+while spam == 2:
+    print('howdy')
+    break
+while spam ==3:
+    print('greetings')
+    break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+name = ''
+while name != 'your name':
+    print('please type your name')
+    name = input()
+print('thank you')
+
+
+Collatz Sequence
+Write a function named collatz() that has one parameter named number. If
+number is even, then collatz() should print number // 2 and return this value.
+If number is odd, then collatz() should print and return 3 * number + 1.
+Then write a program that lets the user type in an integer and that keeps
+calling collatz() on that number until the function returns the value 1.
+(Amazingly enough, this sequence actually works for any integersooner
+or later, using this sequence, youll arrive at 1! Even mathematicians arent
+sure why. Your program is exploring whats called the Collatz sequence, sometimes
+called the simplest impossible math problem.)
+Remember to convert the return value from input() to an integer with
+the int() function; otherwise, it will be a string value.
+Hint: An integer number is even if number % 2 == 0, and its odd if
+number % 2 == 1.
+The output of this program could look something like this:
+Enter number:
+3
+10
+5
+16
+8
+4
+2
+1
+Input Validation
+Add try and except statements to the previous project to detect whether the
+user types in a noninteger string. Normally, the int() function will raise a
+ValueError error if it is passed a noninteger string, as in int('puppy'). In the
+except clause, print a message to the user saying they must enter an integer.
+
+
+# napisz funkcje która sie nazywa collatz() która ma tylko jedn¹ zmienn¹ (number).
+# zmienna number jest parzysta  wtedy funckja collatz() wykuje print(number//2) i wypluwa t¹ wartoæ.
+# jeli jest nieparzysta wtedy collatz() powinien print(3*number+1).
+# napisz program który pozwala u¿ytkownikowi wpisaæ liczbê ca³gowit¹ która wywo³a funkcjê collatz() dopóki-
+# -liczba wypluta {(print)wpisanej liczby} nie osi¹gnie wartoci 1.
+# pamiêtaj o przekonwertowaniu? wyplutej wartoci z input() na int() inaczej to bêdzie str().
+# protip: liczba ca³kowita zmiennej number jest parzysta jeli number % 2 == 0 a jeli jest nieparzysta number % 2 == 1.
+# if(number % 2) == 0:
+
+# if(number % 2) == 1:
+
+
+
+
+
+def collatz(number):
+    if number % 2 == 0:
+        print(number // 2)
+        return number // 2
+    elif number % 2 == 1:
+		result = 3 * number + 1
+        print(result)
+        return result
+    
+
+collatz()
+
+
+def gowno():
+
+result = 2+2
+print(result)
+return  result
+    
+def collatz(number):
+    if number % 2 == 0:
+        print(number // 2)
+        return number // 2
+    elif number % 2 == 1:
+        print(3 * number + 1)
+        return 3 * number + 1
+
+number = input('enter number: ')
+while number != 1:
+    number = collatz(int(number))
+
+
+def choinka(number):
+    if number == 1:
+    print('x'
+          'xx'
+          'xxx')
+    elif number == 2:
+        print('x'
+              'xx'
+              'xxx'
+               'x'
+          'xx'
+          'xxx')
+    elif number == 3:
+
+
+
+insert() !!!
+
+Write a function that takes a list value as an argument and returns
+a string with all the items separated by a comma and a space, with and
+inserted before the last item. For example, passing the previous spam list to
+the function would return 'apples, bananas, tofu, and cats'. But your function
+should be able to work with any list value passed to it.
+
+>>> name = 'Zophie a cat'
+>>> newName = name[0:7] + 'the' + name[8:12]
+>>> name
+'Zophie a cat'
+
+>>> spam = ['cat', 'dog', 'bat']
+>>> spam.insert(1, 'chicken')
+>>> spam
+['cat', 'chicken', 'dog', 'bat']
+
+dupa = ['apples', 'bananas', 'tofu', 'cats']
+
+def gowno(dupa)
+
+s
+dupa = ['apples', 'bananas', 'tofu', 'cats']
+
+def gowno(dupa):
+    for x in dupa:
+        return
+    print(dupa)
+
+y = ['apples', 'bananas', 'tofu', 'cats']
+def function(x):
+    x.insert(-1, ('and ' + x[-1]))
+    del x[-1]
+    numbers = len(x)
+    spam = x[0]
+    for i in range(1,numbers):
+        spam = spam + ', ' + x[i]
+    print(spam)
+
+function(y)
+
+#gownoprogram
+#do³o¿yæ has³a
+#do³o¿yæ choinki
+
+
+print('hi')
+def gowno():      
+    name = input('name?')
+    if name == 'dupa':
+        print('hi dupa')
+		#print('podaj haslo')
+        
+    elif name == 'dupa1':
+        print('hi cwel')
+        
+    elif name == 'dupa2':
+        print('hi cwel2')
+
+    else:
+        print('cwel36')
+
+# tu zdefiniowaæ funkcje od has³a
+def main():  #main()=szkielet
+    while True:
+        gowno()
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+
+# program ma polegaæ na: name > password > konkretna choinka z uzyciem for loop?
+#czy zrobiæ z ka¿dej zmiennej z gowno() oddzielne funkcje 
+opieraj¹ce siêna while loop? funkcja w funkcji? nested/inner function
+#break statements??
+
+03.04.2022
+
+#docelowo zrobiæ funkcja w funkcji
+
+print('hi')
+def gowno():      
+    name = input('name?')
+    if name == 'dupa':
+        print('hi dupa')
+        def gownohaslo1():
+            if name == 'dupa':
+                print('podaj haslo dupa')
+        
+    elif name == 'dupa1':
+        print('hi cwel')
+        
+    elif name == 'dupa2':
+        print('hi cwel2')
+
+    else:
+        print('cwel36')
+
+def main():
+    while True:
+        gowno()
+        gownohaslo1()
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+
+print('hi')
+def gowno():      
+    name = input('name?')
+    if name == 'dupa':
+        print('hi dupa')
+        def gownohaslo1():
+            if name == 'dupa':
+                print('podaj haslo dupa')
+        
+    elif name == 'dupa1':
+        print('hi cwel')
+        
+    elif name == 'dupa2':
+        print('hi cwel2')
+
+    else:
+        print('cwel36')
+
+def main():
+    while True:
+        gowno()
+        gownohaslo1()
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+
+
+
+
+print('hi')
+def gowno():
+    name = input('name?')
+    if name == 'dupa':
+        print('hi dupa')
+        def gownohaslo1():
+            response = input()
+            if response == 'hi':
+                print('podaj haslo dupa')
+        gownohaslo1() 
+    elif name == 'dupa1':
+        print('hi dupa1')
+    elif name == 'dupa2':
+        print('hi cwel2')
+    else:
+        print('cwel36')
+       
+gowno()
+def main():
+    while True:
+        gowno()
+        
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+    
+6.03.2022
+
+
+print('hi')
+def gowno():
+    name = input('name?')
+    if name == 'dupa':
+        print('hi dupa')
+       
+gowno()
+def gownohaslo1():
+            response = input()
+            if response == 'hi':
+                print('podaj haslo dupa')
+gownohaslo1()
+
+def gowno2():
+    name = input('name?')
+    if name == 'dupa2':
+        print(' hi dupa2')
+    gowno2()
+def main():
+    while True:
+        gowno()
+        gowno2()
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+    
+#w tym wariancie funkcja gowno2() pomimo input = 'dupa2' za³apuje dopiero za 3 razem
+
+#po dodaniu funkcji gowno3():
+						if name == 'dupa1':
+						 print(' hi cwel36')
+program zg³upia³ i nie wie któr¹ funkcje wystartowaæ(?).
+					(...)
+print('hi, name?')
+def gowno1():
+    name = input()
+    if name == 'dupa':
+        print('hi dupa')
+    gowno1()
+def gowno2():
+    name = input()
+    if name == 'dupa2':
+        print(' hi dupa2')
+    gowno2()
+def gowno3():
+    name = input('name?')
+    if name == 'dupa1':
+        print(' hi cwel36')
+    gowno3()
+def main():
+    while True:
+        gowno1():
+            restart=input('ask again?')
+            if restard == 'da':
+                pass
+            else:
+                exit()
+        gowno2()
+        gowno3()
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+    
+
+#na tym zakoñczy³em
+#funkcja w pêtli loop?
+#czy siê da?
+#czy program mo¿e wywo³¹æ ci¹g wczeniej zdefiniowanych funkcji?
+#czy trzeba zrobiæ pêtle do ka¿dej mo¿liwej opcji (name>password>choinka)
+#czy trzeba zrobiæ ka¿d¹ funkcje do kazdej mozliwej opcji?
+
+07.03.2022
+#moze ze str 51 sie cos przydac
+#nic
+
+08.03.2022
+
+#response str 58
+
+print('hi, name?')
+def gowno1():
+    name = input()
+    if name == 'dupa':
+        print('hi dupa')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                print('password, dupa?')
+                while True:
+                        password = input()
+                        if password == 'ptaki lataja kluczem':
+                            print('dada')
+                        else:
+                            print('haslo nieprawidlowe')
+                            
+                            return
+    gowno1()
+def gowno2():
+    name = input()
+    if name == 'dupa2':
+        print(' hi dupa2')
+    gowno2()
+def gowno3():
+    name = input('name?')
+    if name == 'dupa1':
+        print(' hi cwel36')
+    gowno3()
+def main():
+    while True:
+        gowno1()
+    
+        
+       
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+    
+#cel na nastepny dzien: zrobic dzialajacy restart z (przynajmniej) 1 funkcja
+#jak zrobiæ ¿eby program nie glupial w przypadku kilku funkcji w main()
+
+09.03.2022
+
+print('''
+*
+**
+***''')
+print('*\n**\n***')
+
+
+print('hi, name?')
+
+def gowno1():
+    name = input()
+    if name == 'dupa':
+        print('hi dupa')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response != 'hi':
+				return False
+			else:
+                print('password, dupa?')
+                
+                while True:
+                       gowno2()
+                        password = input()
+                        if password == 'ptaki lataja kluczem':
+                            print('dada')
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+                            
+                            
+    gowno1()
+def gowno2():
+    name = input()
+    if name == 'dupa2':
+        print(' hi dupa2')
+    gowno2()
+def gowno3():
+    name = input('name?')
+    if name == 'dupa1':
+        print(' hi cwel36')
+    gowno3()
+def main():
+    input
+    while True:
+        
+        wynik = gowno1()
+    
+    
+        
+       
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+    
+
+https://stackoverflow.com/questions/894864/circular-dependency-in-python
+
+python dependency cycle
+
+print('hi, name?')
+
+def gowno1():
+    name = input()
+    if name == 'dupa':
+        print('hi dupa')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                
+                print('password, dupa?')
+                
+                while True:
+                        #gowno2()
+                        password = input()
+                        if password == 'ptaki lataja kluczem':
+                            #petla for
+							print('''
+                            *
+                            **
+                            ***''')
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+                            
+                            
+    gowno1()
+def gowno2():
+    name = input()
+    if name == 'dupa2':
+        print(' hi dupa2')
+		while True:
+			response = input()
+			if response == 'hi':
+				print('password, dupa2')
+				if password == 'gownogowno':
+			#tutaj petla for?
+    gowno2()
+def gowno3():
+    name = input('name?')
+    if name == 'dupa1':
+        print(' hi cwel36')
+    gowno3()
+def main():
+    input
+    while True:
+        
+        wynik = gowno1()
+    
+    
+        
+       
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+
+12.03.2022
+
+print('hi, name?')
+
+def gowno1():
+    name = input()
+    if name == 'dupa':
+        print('hi dupa')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                
+                print('password, dupa?')
+                
+                while True:
+                        #gowno2()
+                        password = input()
+                        password == '123456':
+                            #petla for
+							print('''
+                            *
+                            **
+                            ***''')
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+                            
+                            
+    gowno1()
+def gowno2():
+    name = input()
+    if name == 'dupa2':
+        print(' hi dupa2')
+		while True:
+			response = input()
+			if response == 'hi':
+				print('password, dupa2')
+				if password == '123456':
+			#tutaj petla for?
+    gowno2()
+def gowno3():
+    name = input('name?')
+    if name == 'dupa1':
+        print(' hi cwel36')
+            while True:
+                response = input()
+                if response == 'hi':
+                    print('password, dupa1')
+                    if password == '123456':
+                    
+    gowno3()
+def main():
+    input
+    while True:
+        
+        wynik = gowno1()
+    
+    
+        
+       
+        restart = input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+    
+
+
+password = '123456'
+
+for x in password:
+    print('''
+    *
+    **
+    ***''')
+
+14.03.2022
+
+
+print('hi, name?')
+
+def gowno1():
+    name = input()
+    if name == 'dupa':
+        print('hi dupa')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                
+                print('password, dupa?')
+                
+                while True:
+                        #gowno2()
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')
+				
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+                            
+                            
+    gowno1()
+def gowno2():
+    name = input()
+    if name == 'dupa2':
+        print(' hi dupa2')
+        while True:
+            response = input()
+            if response == 'hi':
+                print('password, dupa2')
+                if password == '123456':
+			#tutaj petla for?
+	gowno2()
+def gowno3():
+name = input('name?')
+    if name == 'dupa1':
+        print(' hi cwel36')
+            while True:
+                response = input()
+                if response == 'hi':
+                    print('password, dupa1')
+                    if password == '123456':
+                    
+    gowno3()
+def main():
+    input
+    while True:
+        
+        wynik = gowno1()
+    
+    
+        
+       
+        restart = input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+
+
+
+
+
+def gowno1():
+    name = input()
+    if name == 'dupa':
+        print('hi dupa')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                
+                print('password, dupa?')
+                
+                while True:
+                        #gowno2()
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')
+				
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+gowno1()
+def gowno2():
+    name = input()
+    if name == 'dupa2':
+        print('hi dupa2')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                
+                print('password, dupa2?')
+                
+                while True:
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')
+				
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+                            
+                            
+    gowno2()
+def gowno3():
+    name = input()
+    if name == 'dupa1':
+        print('hi cwel36')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                print('password, cwel36?')
+                while True:
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')
+				
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+                            
+                            
+    gowno3()
+
+dupadupa podefiniowane gowna
+
+print('hi, name?')
+
+def gowno1():
+    name = input()
+    if name == 'dupa':
+        print('hi dupa')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                
+                print('password, dupa?')
+                
+                while True:
+                        #gowno2()
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')
+				
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+gowno1()
+def gowno2():
+    name = input()
+    if name == 'dupa2':
+        print('hi dupa2')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                
+                print('password, dupa2?')
+                
+                while True:
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')
+				
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+                            
+                            
+    gowno2()
+def gowno3():
+    name = input()
+    if name == 'dupa1':
+        print('hi cwel36')
+        #wcisnac tu while z ifem?(podaj haslo itp.)
+        while True:
+            response = input()
+            if response == 'hi':
+                print('password, cwel36?')
+                while True:
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')
+				
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+                            
+                            
+    gowno3()
+def main():
+    input
+    while True:
+        
+        wynik = gowno1()
+    
+    
+        
+       
+        restart = input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+
+dupadupa tutaj wywalam inputy z funkcji
+
+print('hi, name?')
+name = input()
+def gowno1():
+    if name == 'dupa':
+        print('hi dupa')
+        while True:
+            response = input()
+            if response == 'hi':
+                print('password, dupa?')
+                while True:
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')	
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+gowno1()
+def gowno2():
+    if name == 'dupa2':
+        print('hi dupa2')
+        while True:
+            response = input()
+            if response == 'hi':
+                print('password, dupa2?')
+                while True:
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')	
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+    gowno2()
+def gowno3():
+    if name == 'dupa1':
+        print('hi cwel36')
+        while True:
+            response = input()
+            if response == 'hi':
+                print('password, cwel36?')
+                while True:
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')	
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False                      
+    gowno3()
+def main():
+    while True:
+        restart = input('ask again?')
+        if restart == 'da':
+            pass
+        else:
+            exit()
+main()
+
+print('hi')
+name = input('name?')
+if name == 'dupa2':
+def gowno1():
+        print('hi dupa')
+        while True:
+            response = input()
+            if response == 'hi':
+                print('password, dupa?')
+                while True:
+                        password = input()
+                        password == '123456'
+                        for x in password:
+                            print('''
+                            *
+                            **
+                            ***''')	
+                        else:
+                            print('haslo nieprawidlowe')
+                            return False
+gowno1()
+if name == 'dupa2':
+        gowno1()
+else:
+    exit
+#gowno ma sie aktywowac na input a nie z automatu
+#while/if input=dupa > wywolanie funkcji
+
+
+gowno ozylo
+
+print('hi')
+name = input('name?')
+if name == 'dupa2':
+        def gowno1():
+                print('hi dupa')
+                while True:
+                    response = input()
+                    if response == 'hi':
+                        print('password, dupa?')
+                        while True:
+                                password = input()
+                                password == '123456'
+                                for x in password:
+                                    print('''
+                                    *
+                                    **
+                                    ***''')	
+                                else:
+                                    print('haslo nieprawidlowe')
+                                    return False
+        gowno1()
+else:
+    exit
+#gowno ma sie aktywowac na input a nie z automatu
+#while/if input=dupa > wywolanie funkcji
+
+wersja z while
+
+print('hi')
+name = input('name?')
+while name == 'dupa2':
+        def gowno1():
+                print('hi dupa')
+                while True:
+                    response = input()
+                    if response == 'hi':
+                        print('password, dupa?')
+                        while True:
+                                password = input()
+                                password == '123456'
+                                for x in password:
+                                    print('''
+                                    *
+                                    **
+                                    ***''')	
+                                else:
+                                    print('haslo nieprawidlowe')
+                                    return False
+        gowno1()
+elif name == 'dupa2':
+	def gowno2():
+		if name == 'dupa2':
+			print('hi dupa2')
+			while True:
+				response = input()
+				if response == 'hi':
+					print('password, dupa2?')
+					while True:
+							password = input()
+							password == '123456'
+							for x in password:
+								print('''
+								*
+								**
+								***''')	
+							else:
+								print('haslo nieprawidlowe')
+								return False
+		gowno2()
+else:
+    exit
+#gowno ma sie aktywowac na input a nie z automatu
+#while/if input=dupa > wywolanie funkcji
+
+
+print('hi')
+name = input('name?')
+while (name != 'dupa' and name != 'dupa2'):
+if name == 'dupa':
+	def gowno1():
+		print('hi dupa')
+		while True:
+			response = input()
+			if response == 'hi':
+print('password, dupa?')
+while True:
+password = input()
+password == '123456'
+for x in password:
+print('''
+*
+**
+***''')	
+else:
+print('haslo nieprawidlowe')
+return False
+gowno1()
+elif:
+name == 'dupa2':
+def gowno2():
+print('hi, dupa2')
+while True:
+response = input()
+if response == 'hi':
+print('password, dupa2?')
+while True:
+password = input()
+password == '123456'
+for x in pasword:
+print('''
+*
+**
+***''')
+else:
+print('haslo nieprawidlowe')
+return False
+gowno2()
+        
+else:
+    exit
+#gowno ma sie aktywowac na input a nie z automatu
+#while/if input=dupa > wywolanie funkcji
+
+17.03.2022
+
+print('hi')
+name = input('name?')
+while (name == 'dupa' or name == 'dupa2'):
+        if name == 'dupa':
+                def gowno1():
+                        print('hi dupa')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')	
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        return False
+                gowno1()
+        elif name == 'dupa2':
+                def gowno2():
+                        print('hi, dupa2')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa2?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in pasword:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        return False
+                gowno2()
+                print('gownogowno')
+#gowno ma sie aktywowac na input a nie z automatu
+#while/if input=dupa > wywolanie funkcji
+
+#uporzadkowac te gowna ify elify wzgledem while
+    #https://stackoverflow.com/questions/33711363/python-using-a-while-loop-with-an-if-elif-statement
+
+#zostaje odrzucam funkcje gowno3(), nie ma potrzeby tego wciskac, wystarczajaca ilosc kodu
+
+print('hi')
+name = input('name?')
+while (name == 'dupa' or name == 'dupa2'):
+        if name == 'dupa':
+                def gowno1():
+                        print('hi dupa')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')	
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        return False
+                gowno1()
+        elif name == 'dupa2':
+                def gowno2():
+                        print('hi, dupa2')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa2?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        return False
+                gowno2()
+                print('gownogowno')
+#gowno ma sie aktywowac na input a nie z automatu
+#while/if input=dupa > wywolanie funkcji
+
+#uporzadkowac te gowna ify elify wzgledem while
+    #https://stackoverflow.com/questions/33711363/python-using-a-while-loop-with-an-if-elif-statement
+
+20.03.2022
+
+print('hi')
+name = input('name?')
+while (name == 'dupa' or name == 'dupa2'):
+        if name == 'dupa':
+                def gowno1():
+                        print('hi dupa')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')	
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        return False
+                gowno1()
+        elif name == 'dupa2':
+                def gowno2():
+                        print('hi, dupa2')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa2?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        return False
+                gowno2()
+                print('gownogowno')
+#gowno ma sie aktywowac na input a nie z automatu
+#while/if input=dupa > wywolanie funkcji
+
+#uporzadkowac te gowna ify elify wzgledem while
+    #https://stackoverflow.com/questions/33711363/python-using-a-while-loop-with-an-if-elif-statement
+
+#naprawic wprowadzanie hasla, for loop dziala na losowe haslo
+#naprawic haslo nieprawidlowe, nawet jesli jest prawidlowe
+#ulepszyc choinke
+#robic main()
+
+22.03.2022
+-
+23.03
+
+print('hi')
+def gowno():      
+    name = input('name?')
+    if name == 'dupa':
+        print('hi dupa')
+		#print('podaj haslo')
+        
+    elif name == 'dupa1':
+        print('hi cwel')
+        
+    elif name == 'dupa2':
+        print('hi cwel2')
+
+    else:
+        print('cwel36')
+
+# tu zdefiniowaæ funkcje od has³a
+def main():  #main()=szkielet
+    while True:
+        gowno()
+        restart=input('ask again?')
+        if restart == 'da':
+            pass
+        
+        else:
+            exit()
+main()
+
+
+print('hi')
+name = input('name?')
+while (name == 'dupa') or (name == 'dupa2'):
+        if name == 'dupa':
+                def gowno1():
+                        print('hi dupa')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                while password == '123456':
+                                                        print('''
+                                                          *
+                                                         ***
+                                                        *****''')
+                                                        
+                                                        return 
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        break
+                gowno1()
+        elif name == 'dupa2':
+                def gowno2():
+                        print('hi, dupa2')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa2?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        break
+                gowno2()
+        else:
+             print('gownogowno')
+def main():
+    while True:
+            gowno1()
+            wynik = gowno1()
+            wynik == False
+            restart = input('ask again?')
+            if restart == 'da':
+                    pass
+        
+            else:
+                    exit()
+main()
+
+
+print('hi')
+name = input('name?')
+def gowno():
+        
+        while (name == 'dupa') or (name == 'dupa2'):
+                if name == 'dupa':
+                        print('hi dupa')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa?')
+                                        while True:
+                                                password = input()
+                                                if password == '123456':
+                                                        print('''
+                                                          *
+                                                         ***
+                                                        *****''')
+                                                        exit()
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        break
+                
+                elif name == 'dupa2':
+                        print('hi, dupa2')
+                        while True:
+                                response =input()
+                                if response == 'hi':
+                                        print('password, dupa2?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                          *
+                                                         ***
+                                                        *****''')
+                                                        exit()
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        return
+                else:
+                        break
+gowno()
+def main():
+        while True:
+                gowno()
+                restart = input('ask again?')
+                if restart == 'da':
+                        gowno()
+                else:
+                        exit()
+main()
+#gowno ma sie aktywowac na input a nie z automatu
+#while/if input=dupa > wywolanie funkcji
+
+#uporzadkowac te gowna ify elify wzgledem while
+    #https://stackoverflow.com/questions/33711363/python-using-a-while-loop-with-an-if-elif-statement
+
+#20.03 naprawic wprowadzanie hasla, for loop dziala na losowe haslo
+#naprawic haslo nieprawidlowe, nawet jesli jest prawidlowe
+#ulepszyc choinke
+#robic main()
+
+
+print('hi')
+def gowno():      
+    name = input('name?')
+    if name == 'dupa':
+        print('hi dupa')
+		#print('podaj haslo')
+        
+    elif name == 'dupa1':
+        print('hi cwel')
+        
+    elif name == 'dupa2':
+        print('hi cwel2')
+
+    else:
+        print('cwel36')
+
+# tu zdefiniowaæ funkcje od has³a
+def main():  #main()=szkielet
+    while True:
+        gowno()
+        restart=input('ask again?')
+        if restart == 'da': == '123456':
+                                                        print('''
+                                                          *
+                                                         ***
+                                                        *****''')
+                                                        
+                                                        exit() 
+                                                if password !='123456':
+                                                        print('haslo nieprawidlowe')
+                                                        exit()
+                gowno1()
+        elif name == 'dupa2':
+                def gowno2():
+                        print('hi, dupa2')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa2?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        break
+                gowno2()
+        else:
+             print('gownogowno')
+def main():
+    while True:
+            gowno1() or gowno2()
+            
+        
+            restart = input('ask again?')
+            if restart == 'da':
+                    pass
+        
+            else:
+                    exit()
+main()
+
+#po wpisaniu blednego hasla trzeba wymyslic wyjscie z funkcji?
+
+8.04.22
+
+print('hi')
+name = input('name?')
+while (name == 'dupa') or (name == 'dupa2'):
+        if name == 'dupa':
+                def gowno1():
+                        print('hi dupa')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                while password == '123456':
+                                                        print('''
+                                                          *
+                                                         ***
+                                                        *****''')
+                                                        
+                                                        exit() 
+                                                if password !='123456':
+                                                        print('haslo nieprawidlowe')
+                                                        print('ask again?')
+                                                        response = input()
+                                                        if response != 'da':
+                                                                exit()
+                gowno1()
+        elif name == 'dupa2':
+                def gowno2():
+                        print('hi, dupa2')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa2?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        break
+                gowno2()
+        else:
+             print('gownogowno')
+def main():
+    while True:
+            gowno1() or gowno2()
+            
+        
+            restart = input('ask again?')
+            if restart == 'da':
+                    pass
+        
+            else:
+                    exit()
+main()
+
+#po wpisaniu blednego hasla trzeba wymyslic wyjscie z funkcji?
+
+print('hi')
+name = input('name?')
+while (name == 'dupa') or (name == 'dupa2'):
+        if name == 'dupa':
+                def gowno1():
+                        print('hi dupa')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                while password == '123456':
+                                                        print('''
+                                                          *
+                                                         ***
+                                                        *****''')
+                                                        
+                                                        exit() 
+                                                if password !='123456':
+                                                        print('haslo nieprawidlowe')
+                                                        print('ask again?')
+                                                        response = input()
+                                                        if response != 'da':
+                                                                exit()
+                gowno1()
+        elif name == 'dupa2':
+                def gowno2():
+                        print('hi, dupa2')
+                        while True:
+                                response = input()
+                                if response == 'hi':
+                                        print('password, dupa2?')
+                                        while True:
+                                                password = input()
+                                                password == '123456'
+                                                for x in password:
+                                                        print('''
+                                                        *
+                                                        **
+                                                        ***''')
+                                                else:
+                                                        print('haslo nieprawidlowe')
+                                                        break
+                gowno2()
+        else:
+             print('gownogowno')
+def main():
+    while True:
+            gowno1() or gowno2()
+            
+        
+            restart = input('ask again?')
+            if restart == 'da':
+                    pass
+        
+            else:
+                    exit()
+main()
+
+
+
+
+
+
+print('hi')
+
+branch = input('which branch would you like to pick? 1, 2 or 3?:')
+
+branch1 = '*'
+branch2 = '**'
+branch3 = '***'
+
+for branch in 'branch1':
+    print(branch1)
+    for branch in 'branch2':
+        print((branch1) and (branch2))
+        for branch in 'branch3':
+            print((branch1) and (branch2) and (branch3))
+
+            rows = 3
+# outer loop
+for i in range(1, rows + 1):
+    # inner loop
+    for j in range(1, i + 1 ):
+        print("*", end=" ")
+    print('')
+for i in range(1, rows + 1):
+    # inner loop
+    for j in range(1, i + 1 ):
+        print("*", end=" ")
+    print('')
+for i in range(1, rows + 1):
+    # inner loop
+    for j in range(1, i + 1 ):
+        print("*", end=" ")
+    print('')
+    
+    # zrobic 3 rozne choinki w petli while
+
+    def branch1():
+    rows = 3
+    for i in range(1, rows + 1):
+    
+        for j in range(1, i + 1 ):
+            print("*", end=" ")
+        print('')
+        
+def branch2():
+    rows = 3
+    for i in range(1, rows + 1):
+    
+        for j in range(1, i + 1 ):
+            print("*", end=" ")
+        print('')
+    for i in range(1, rows + 1):
+    
+        for j in range(1, i + 1 ):
+            print("*", end=" ")
+        print('') 
+        
+def branch3():
+    rows = 3
+
+    for i in range(1, rows + 1):
+    
+        for j in range(1, i + 1 ):
+            print("*", end=" ")
+        print('')
+    for i in range(1, rows + 1):
+    
+        for j in range(1, i + 1 ):
+            print("*", end=" ")
+        print('')
+    for i in range(1, rows + 1):
+    
+        for j in range(1, i + 1 ):
+            print("*", end=" ")
+        print('')
+
+print('hi')
+response = input('branch?:')
+if response == branch1:
+    branch1()
+    
+    # zrobic 3 rozne choinki w petli while
+
+# czy da sie jakos sprytniej zrobi? for loop?
+
+def branch1():
+    rows = 3
+    for i in range(1, rows + 1):
+
+        for j in range(1, i + 1):
+            print("*", end=" ")
+        print('')
+
+
+def branch2():
+    rows = 3
+    for i in range(1, rows + 1):
+
+        for j in range(1, i + 1):
+            print("*", end=" ")
+        print('')
+    for i in range(1, rows + 1):
+
+        for j in range(1, i + 1):
+            print("*", end=" ")
+        print('')
+
+
+def branch3():
+    rows = 3
+
+    for i in range(1, rows + 1):
+
+        for j in range(1, i + 1):
+            print("*", end=" ")
+        print('')
+    for i in range(1, rows + 1):
+
+        for j in range(1, i + 1):
+            print("*", end=" ")
+        print('')
+    for i in range(1, rows + 1):
+
+        for j in range(1, i + 1):
+            print("*", end=" ")
+        print('')
+
+
+print('hi')
+response = input('branch?:')
+# while True:
+
+if response == 'branch1':
+    branch1()
+    exit()
+elif response == 'branch2':
+    branch2()
+    exit()
+elif response == 'branch3':
+    branch3()
+    exit()
+else:
+    print('noob')
+    exit()
+
+    
+  
+
