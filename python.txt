@@ -1,0 +1,70 @@
+python test.py - odpalanie pliku z programem
+source venv/scripts/activate - wchodzenie do virt env
+
+ls
+mkdir nazwa
+
+stworzyæ program który sprawdza czy na wykopie pisz¹ o sasinie
+true/false
+
+http://inventwithpython.com/
+
+31
+
+cd change directory
+
+ls ..
+
+pwd obecna œcie¿ka
+
+koniec na 56 stronie
+
+
+
+
+Python
+https://www.python.org - dokumentacja jêzyka, dokumentacja standardowych modu³ów zawiera opis funkcji, jakie parametry przyjmuje i co zwraca, np. https://docs.python.org/3/library/urllib.parse.html#module-urllib.parse
+
+PyPI
+Python Package Index - zcentralizowane miejsce, gdzie ludzie zamieszczaj¹ modu³y (biblioteki) pythona. Jêzyk zawiera wbudowane modu³y tj. Urllib, ale ca³a reszta jest pobierana st¹d. Mo¿na st¹d pobraæ requests, Django i resztê. Np. https://pypi.org/project/Django/
+
+Pip i virtualenv
+Pip to narzêdzie konsolowe do zarz¹dzania lokalnie zainstalowanymi pakietami.
+Wykonuj¹c `pip install Django` zainstaluje nam lokalnie Django w najnowszej wersli z pypi.org.
+
+Virtulenv to pythonowe rozwi¹zanie do zarz¹dzania œrodowiskami z zainstalowanymi pakietami, pozwala na stworzenie równolegle œrodowisk z ró¿nymi wersjami pakietów pythona. Przydaje siê gdy mamy równolegle kilka projektów, i ka¿dy ma inne wersje. Dodatkowo na linuksie oddziela nam pakiety projektu od bibliotek pythona zainstalowanych na potrzeby dystrybucji, np. Ubuntu ma lxml w danej wersji w której wymagaj¹ inne paczki systemowe, a w naszym projekcie mo¿emy operowaæ na zupe³nie innej wersji.
+
+W praktyce - tworzymy sobie virtualenva w katalogu projektu (nazywamy go env czy venv), dodajemy do .gitignore by git go nie zapisywa³, tworzymy plik requirements.txt z przypiêtymi jakimiœ zale¿noœciami, i instalujemy przez `pip install -r requirements.txt`. Albo czêœciej na start: instalujemy jakieœ biblioteki z PyPI prez `pip install <biblioteka>`, a potem robimy `pip freeze` który zrobi listê wszystkiego zainstalowanego w danym virtualenvie i to zapisujemy do requirements.txt.
+
+Ipython
+Interaktywne œrodowisko w którym na bierz¹ca mo¿emy wpisywaæ i wykonywaæ statementy jêzyka, przydaje siê do obadania na szybko jak siê korzysta z danej biblioteki
+Biblioteki do scrape’owania
+
+Requests (do wykonywania zapytañ http) - https://docs.python-requests.org/en/latest/
+Beautifulsoup (parsowanie html do wyci¹gania linków) - https://beautiful-soup-4.readthedocs.io/en/latest/
+
+Œrodowisko programistyczne
+Git for windows (zawiera basha)
+Python do windowsa
+
+Dobrze jest te¿ mieæ jakieœ pe³ne IDE, np. PyCharm community edition jest darmowe.
+
+Wiedza:
+Protokó³ http
+model request i response, metody http (GET, POST, PUT), status code’y. Dobrym zasobem jest Mozilla Developer Network (MDN), s¹ opisane ró¿ne nag³ówki http, np. https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+Javascript
+Podstawowa wiedza do wykonywania jakichœ prostych rzeczy.
+Warto trochê wiedzieæ o nodejs, du¿o narzêdzi na githubie jest obecnie pisana przez frontendowców i bazuj¹ na nodejs.
+Git
+Developer tools
+W przegl¹darce pod F12 - odczytywanie zapytañ pod “Requests” i inspekcja DOM
+
+Inne
+Single Page Applications vs klasyczne aplikacje webowe, strony statyczne
+
+Terminologia
+CLI, gui
+framework vs biblioteka,
+Json
+
+
